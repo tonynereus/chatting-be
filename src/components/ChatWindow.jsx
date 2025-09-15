@@ -1,7 +1,7 @@
 import React, { useState ,useRef,useEffect} from 'react';
 import { Input, Button, List } from 'antd';
 import { SendOutlined } from '@ant-design/icons';
-import './ChatWindow.css';
+import './chatWindow.css';
 
 const ChatWindow = ({ selectedUser, messages, sendMessage }) => {
     const [message, setMessage] = useState('');
