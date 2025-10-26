@@ -22,7 +22,9 @@ const App = () => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io('https://cwu-be.onrender.com', {
+    // const newSocket = io('https://cwu-be.onrender.com', {
+    // const newSocket = io('https://cwu-be.onrender.com', {
+    const newSocket = io('https://cwu.tonyicon.com.ng', {
       transports: ["websocket"],
       auth: { token: 'admin-secret-token' },
     });
